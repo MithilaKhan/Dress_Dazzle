@@ -1,8 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { React, useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion';
@@ -16,17 +14,11 @@ import { Pagination } from 'swiper/modules';
 
 const Trending = () => {
 
-  useEffect(() => {
-    AOS.init({
-         duration: 1000,
-         once: false,
-       })
- }, [])
+  
 
     return (
-        <div data-aos="fade-up" className='mt-20 mb-16'>
-            <h1 className='lg:text-4xl text-2xl text-center py-2  font-semibold'>New Arrivals</h1> 
-          <p className='text-gray-500 text-center lg:text-xl text-lg mb-10'>Find the top most popular items in Umino best sellers.</p> 
+        <div >
+            
 <div className="swiper-container ">
 <Swiper
           spaceBetween={40}
