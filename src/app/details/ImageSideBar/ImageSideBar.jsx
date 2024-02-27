@@ -1,60 +1,102 @@
 "use client"
 import React from 'react';
-import Swiper from 'react-id-swiper';
-import Image from 'next/image'; 
-// import "./style.css"
+import  {  useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import Image from 'next/image';
+
 const ImageSideBar = () => {
-    const params = {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        }
-      }
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    
   
     return (
-        <div className='mt-40'>
-       <Swiper {...params}
-    >
-        <div> <Image
-      src="https://images.unsplash.com/photo-1641792669610-83e23d551bec?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5pa2UlMjBhaXIlMjBmb3JjZSUyMDF8ZW58MHx8MHx8fDA%3D"
-      alt="image"
-      width={300} // Set an appropriate width value
-      height={200} // Set an appropriate height value
-      sizes="100vw"
-      style={{width: 'auto', height: 'auto' }} 
-      
-    /></div>
-        <div> <Image
-      src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
-      alt="image"
-      width={300} // Set an appropriate width value
-      height={110} // Set an appropriate height value
-      sizes="100vw"
-      style={{width: 'auto', height: 'auto' }} 
-      
-    /></div>
-        <div> <Image
-      src="https://images.unsplash.com/photo-1641792669610-83e23d551bec?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5pa2UlMjBhaXIlMjBmb3JjZSUyMDF8ZW58MHx8MHx8fDA%3D"
-      alt="image"
-      width={300} // Set an appropriate width value
-      height={110} // Set an appropriate height value
-      sizes="100vw"
-      style={{width: 'auto', height: 'auto' }} 
-      
-    /></div>
-        <div> <Image
-      src="https://images.unsplash.com/photo-1641792669610-83e23d551bec?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5pa2UlMjBhaXIlMjBmb3JjZSUyMDF8ZW58MHx8MHx8fDA%3D"
-      alt="image"
-      width={300} // Set an appropriate width value
-      height={110} // Set an appropriate height value
-      sizes="100vw"
-      style={{width: 'auto', height: 'auto' }} 
-      
-    /></div>
+        <div className=''>
+       <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        spaceBetween={6}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+        <SwiperSlide>
+          <Image 
+          alt=''
+          width={800}
+          height={500}
+          style={{ width: '100%' , height:"800px"}} 
+          src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image
+           alt=''
+             width={800}
+              height={500}
+              style={{ width: '100%' , height:"800px"}} 
+              src="https://images.unsplash.com/photo-1533659828870-95ee305cee3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image 
+          alt='' 
+          width={800} height={500}
+          style={{ width: '100%' , height:"800px"}} 
+           src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image alt='' 
+          width={800} height={500}
+          style={{ width: '100%' , height:"800px"}} 
+          src="https://images.unsplash.com/photo-1634469875582-a0885fc2f589?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" />
+        </SwiperSlide>
        
-      </Swiper>  
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={4}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Image alt='' width={120} height={130}
+          style={{ width: '100%' , height:"130px"}}
+          src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image alt=''width={120} height={130}
+          style={{ width: '100%' , height:"130px"}}
+            src="https://images.unsplash.com/photo-1533659828870-95ee305cee3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image alt=''width={120} height={130}
+          style={{ width: '100%' , height:"130px"}}
+           src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image alt=''width={120} height={130}
+          style={{ width: '100%' , height:"130px"}}
+           src="https://images.unsplash.com/photo-1634469875582-a0885fc2f589?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" />
+        </SwiperSlide>
+       
+      </Swiper>
         </div>
     );
 };
