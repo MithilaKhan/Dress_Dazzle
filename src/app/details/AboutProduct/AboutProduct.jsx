@@ -37,14 +37,14 @@ const AboutProduct = () => {
     </TabPanel>
     <TabPanel>
       <h2 className="text-gray-600 font-bold text-2xl mt-3">Customer Reviews</h2>
-      <div className='flex  py-2   text-2xl'>
+      {/* <div className='flex  py-2 mx-auto   text-2xl'>
       <p><MdOutlineStarBorderPurple500 /> </p>
       <p><MdOutlineStarBorderPurple500 /> </p>
       <p><MdOutlineStarBorderPurple500 /> </p>
       <p><MdOutlineStarBorderPurple500 /> </p>
       <p><MdOutlineStarBorderPurple500 /> </p>
       
-    </div>
+    </div> */}
       <p className='text-xl'>No reviews yet</p>
     </TabPanel>
   </Tabs>
