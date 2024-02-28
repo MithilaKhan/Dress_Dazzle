@@ -3,6 +3,7 @@ import React from 'react';
 import DetailsSlider from './DetailsSlider/DetailsSlider';
 import YouMightLike from './YouMightLike/YouMightLike';
 import ImageSideBar from './ImageSideBar/ImageSideBar';
+import AboutProduct from './AboutProduct/AboutProduct';
 
 
 const details = () => {
@@ -18,7 +19,10 @@ const details = () => {
                    
                 </div>
             </div>
-
+            <div className='mt-10'>
+            <AboutProduct/>
+            </div>
+       
             <div>
                 <YouMightLike/>
             </div>

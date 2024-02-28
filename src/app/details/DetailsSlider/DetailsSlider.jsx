@@ -40,7 +40,7 @@ const DetailsSlider = () => {
             <p className='text-xl'><span className='font-semibold pe-4'> AVAILABLE:</span> AVAILABLE </p>
           </div>
 
-            <p className='text-xl mt-4'>Always in, always fresh. The Air Jordan 1 Low sets you up with a piece of Jordan history and heritage that's comfortable all day. Choose your colors, then step out in the iconic profile that's built with a high-end mix of materials and encapsulated Air in the heel. </p>
+            <p className='text-xl mt-4'> Always in, always fresh. The Air Jordan 1 Low sets you up with a piece of Jordan history and heritage that's comfortable all day. Choose your colors, then step out in the iconic profile that's built with a high-end mix of materials and encapsulated Air in the heel. </p>
 
 <ul className='mt-3'>
     <li className='flex gap-1 text-xl items-center'><span><GoDotFill/></span>Shown: White/Aluminum/Wolf Grey</li>
