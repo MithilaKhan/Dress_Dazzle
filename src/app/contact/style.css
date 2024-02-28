@@ -42,3 +42,9 @@
     box-shadow: none;
     transform: translateY(0);
   }
+  @media (max-width:776) {
+    .button-27{
+      width:40%;
+    }
+   
+  }

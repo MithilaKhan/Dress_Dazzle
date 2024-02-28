@@ -21,20 +21,20 @@ const ProductPage = () => {
   };
     return (
         <div className='pt-0 '>
-          <div className="relative">
+          <div className="relative m-3">
           <Image
-      src="https://images.unsplash.com/photo-1601618752436-7b60b7818699?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       alt="image"
       width={800} // Set an appropriate width value
       height={500} // Set an appropriate height value
       sizes="100vw"
-      style={{ width: '100%', height: '500px' }} 
-      className='brightness-75'
+      style={{ width: '100%' , height:"500px"}} 
+      className='brightness-50'
     />
 
-    <div className="absolute bottom-0 left-0 w-full  text-white lg:p-6 lg:mb-10 lg:ms-8 lg:text-center  m-4 ">
+    <div className="absolute bottom-0 left-0 w-full  text-white lg:p-6 lg:mb-10 lg:ms-8 lg:text-center  max-w-screen-xl mx-auto   ">
     <p className="lg:text-7xl text-2xl  lg:font-extrabold font-bold lg:pb-6 font-[Poppins] ">Chic Trends Await You.</p>
-    <p className="lg:text-xl  text-sm lg:font-bold font-semibold lg:pb-10 pb-3 ">"Revitalize Your Wardrobe with <span className='text-purple-600'>DressDazzle  </span>'s Exclusive Fashion Collection <br />  — Unleash Your Style, Unleash Yourself!"</p>
+    <p className="lg:text-xl  text-sm lg:font-bold font-semibold lg:pb-10 pb-3 ">"Revitalize Your Wardrobe with <span className='text-red-700 font-bold'>DressDazzle  </span>'s Exclusive Fashion Collection <br />  — Unleash Your Style, Unleash Yourself!"</p>
 
     <div className="  lg:text-center  lg:pb-10   ">
     <button className="button-85  ">Explore Fashion</button>
@@ -42,7 +42,7 @@ const ProductPage = () => {
     </div>
     </div>
           </div>
-          <div className='grid lg:grid-cols-5 gap-3 sm:grid-cols-2 m-6'>
+          <div className='grid lg:grid-cols-5 gap-3 sm:grid-cols-2 m-6 z-0'>
 
             <div className='relative'>
             <Image

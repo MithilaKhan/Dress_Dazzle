@@ -8,7 +8,7 @@ import AboutProduct from './AboutProduct/AboutProduct';
 
 const details = () => {
     return (
-        <div className='font-[Poppins] pb-10  mt-20'>
+        <div className='font-[Poppins] pb-10  mt-20 z-0'>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-5 lg:m-7'>
                 <div>
                     <ImageSideBar/>  

@@ -29,7 +29,7 @@ const DetailsSlider = () => {
 
            <p className='text-xl  mt-2'>4 interest-free payments of $28.75 with  <span className='font-semibold'>Klarna.</span>  <span className='underline'>Learn More</span></p>
 
-           <div className=' flex gap-3  mt-4 text-xl mb-2 '>
+           <div className=' flex lg:flex-row flex-col gap-3  mt-4 text-xl mb-2 '>
            <button className="btn btn-neutral mb-3 w-1/2 h-14 rounded-xl">Add to Bag</button>
            <button className="btn btn-active  h-14 w-1/2 rounded-xl flex items-center">Favorite <span><BiHeart/></span></button>
            </div>

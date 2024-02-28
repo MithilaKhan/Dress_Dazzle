@@ -68,7 +68,7 @@ const Footer = () => {
 <div className='bg-black text-neutral-content font-[Poppins] ps-2 pb-10 '>
 <nav className="flex gap-6 ">
     <div className=" flex gap-1 text-white text-lg font-semibold items-center"> <p><FaLocationDot/></p> <p>Dhaka,BanglaDesh</p> </div> 
-    <div className=" ">  <p>© 2023 DressDazzle , Inc. All Rights Reserved</p> </div> 
+    <div className=" ">  <p>© 2024 DressDazzle , Inc. All Rights Reserved</p> </div> 
    
   
   

@@ -5,7 +5,7 @@ import GetInTouch from './GetInTouch';
 
 const page = () => {
     return (
-        <div className='z-10'>       
+        <div className='z-0'>       
             <Map/> 
             <HereToHelp/>
             <GetInTouch/>

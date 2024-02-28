@@ -10,11 +10,11 @@ const Button = () => {
    
   </div>
  
-  <div className="text-3xl">
+  <div className="lg:text-3xl text-xl">
   <BiHeart/>
  </div>
 
-  <div className="text-3xl">
+  <div className="lg:text-3xl text-xl">
   <BiCartAlt/>
  </div>
 
