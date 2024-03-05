@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { MdOutlineStarBorderPurple500 } from 'react-icons/md';
+// import { MdOutlineStarBorderPurple500 } from 'react-icons/md';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 const AboutProduct = () => {
