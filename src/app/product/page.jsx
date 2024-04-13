@@ -1,6 +1,5 @@
 "use client" ;
-import React, { useState } from 'react';
-import products from "@/data/products.json"
+import React, { useEffect, useState } from 'react';
 import SingleProduct from '@/app/product/SingleProduct';
 import "@/app/product/style.css"
 import { AiOutlineArrowUp, AiOutlineDown } from "react-icons/ai";
@@ -9,9 +8,21 @@ import Color from './Color';
 import Sport from './Sport';
 import Band from './Band';
 import Image from 'next/image';
+
+
 const ProductPage = () => {
   const [showDetails, setShowDetails] = useState(true);
   const [showGender, setShowGender] = useState(true);
+  const [products , setProducts] = useState([])
+
+  useEffect(()=>{
+    fetch("http://localhost:5000/products")
+    .then(res => res.json())
+    .then(data => {
+      setProducts(data)
+      console.log(data)
+    })
+  },[])
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
@@ -119,7 +130,7 @@ const ProductPage = () => {
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content flex flex-col ms-10 m-10">
     <div className='grid lg:grid-cols-3 gap-1'>
-    {products.map((band) => <SingleProduct key={band.id} band={band}/>)}
+    {products.map((band) => <SingleProduct key={band._id} band={band}/>)}
     </div>
     {/* Page content here */}
     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import "@/app/product/product.css"
 import { motion } from 'framer-motion';
 const SingleProduct = ({band}) => {
     return (
@@ -25,7 +26,11 @@ const SingleProduct = ({band}) => {
     <h2 className="card-title pb-2 text-xl text-orange-700">{band.sellerType}</h2>
     <p className='pb-1 text-xl font-semibold'>{band.dressTitle} </p>
     <p className='pb-1 text-xl'>{band.dressCategory} </p>
+    <div className='flex justify-between'>
     <p className='pb-1 text-xl text-orange-700'> ${band.price}</p> 
+    <button className="button-24">Buy Now</button>
+    </div>
+    
     </Link>
    
   </div>
