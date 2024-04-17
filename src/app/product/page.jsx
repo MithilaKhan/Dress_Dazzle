@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleProduct from '@/app/product/SingleProduct';
 import "@/app/product/style.css"
+import Link from 'next/link';
 import { AiOutlineArrowUp, AiOutlineDown } from "react-icons/ai";
 import Price from './Price';
 import Color from './Color';
@@ -130,7 +131,16 @@ const ProductPage = () => {
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content flex flex-col ms-10 m-10">
     <div className='grid lg:grid-cols-3 gap-1'>
-    {products.map((band) => <SingleProduct key={band._id} band={band}/>)}
+    {products.map((band) => <div key={band._id}>
+      <SingleProduct  band={band}/>
+      <div className='flex justify-between w-80  mb-10 '>
+    <p className='pb-1 text-xl text-orange-700 font-bold'> ${band.price}</p> 
+    <Link href={`/product/${band._id}`}>
+    <button className="button-24">Buy Now</button>
+    </Link>
+    
+    </div>
+    </div> )}
     </div>
     {/* Page content here */}
     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>

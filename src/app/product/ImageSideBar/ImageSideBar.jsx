@@ -13,7 +13,7 @@ import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import Image from 'next/image';
 
-const ImageSideBar = () => {
+const ImageSideBar = ({product}) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
     
   
@@ -36,7 +36,7 @@ const ImageSideBar = () => {
           width={800}
           height={500}
           style={{ width: '100%' , height:"800px"}} 
-          src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+          src= {product.img2} />
         </SwiperSlide>
 
         <SwiperSlide>
@@ -45,7 +45,7 @@ const ImageSideBar = () => {
              width={800}
               height={500}
               style={{ width: '100%' , height:"800px"}} 
-              src="https://images.unsplash.com/photo-1533659828870-95ee305cee3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+              src={product.img3} />
         </SwiperSlide>
 
         <SwiperSlide>
@@ -53,14 +53,14 @@ const ImageSideBar = () => {
           alt='' 
           width={800} height={500}
           style={{ width: '100%' , height:"800px"}} 
-           src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
+           src={product.img4} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Image alt='' 
           width={800} height={500}
           style={{ width: '100%' , height:"800px"}} 
-          src="https://images.unsplash.com/photo-1634469875582-a0885fc2f589?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" />
+          src={product.img5}/>
         </SwiperSlide>
        
       </Swiper>
@@ -76,24 +76,24 @@ const ImageSideBar = () => {
         <SwiperSlide>
           <Image alt='' width={120} height={130}
           style={{ width: '100%' , height:"130px"}}
-          src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+          src={product.img2}/>
         </SwiperSlide>
 
         <SwiperSlide>
           <Image alt=''width={120} height={130}
           style={{ width: '100%' , height:"130px"}}
-            src="https://images.unsplash.com/photo-1533659828870-95ee305cee3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWwlMjBkcmVzc3xlbnwwfHwwfHx8MA%3D%3D" />
+            src={product.img3}/>
         </SwiperSlide>
 
         <SwiperSlide>
           <Image alt=''width={120} height={130}
           style={{ width: '100%' , height:"130px"}}
-           src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
+           src={product.img4} />
         </SwiperSlide>
         <SwiperSlide>
           <Image alt=''width={120} height={130}
           style={{ width: '100%' , height:"130px"}}
-           src="https://images.unsplash.com/photo-1634469875582-a0885fc2f589?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" />
+           src={product.img5} />
         </SwiperSlide>
        
       </Swiper>

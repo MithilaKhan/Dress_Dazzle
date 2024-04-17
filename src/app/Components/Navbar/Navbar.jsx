@@ -43,6 +43,7 @@ const Navbar = () => {
           </ul>
         </li>
         <li><Link href="/contact">Contact Us</Link></li>
+        <li><Link href="/login">Login </Link></li>
       </ul>
     </div>
     <a className="font-[Poppins] font-bold lg:text-4xl text-2xl lg:ps-7 ps-3">DressDazzle</a>
@@ -86,6 +87,7 @@ const Navbar = () => {
         </details>
       </li>
       <li><Link href="/contact">Contact Us</Link></li>
+      <li><Link href="/login">Login </Link></li>
     </ul>
   </div>
   <div className="navbar-end lg:me-6 me-2">
