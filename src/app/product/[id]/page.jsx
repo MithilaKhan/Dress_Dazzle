@@ -12,7 +12,7 @@ const DetailsPage = ({ params }) => {
 
     useEffect(() => {
         
-            fetch(`http://localhost:5000/products/${params.id}`)
+            fetch(`https://dress-dazzle-elci3tluz-mithilakhans-projects.vercel.app/products/${params.id}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
